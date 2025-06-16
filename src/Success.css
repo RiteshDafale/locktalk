@@ -1,0 +1,22 @@
+.SuccessCont {
+    display: flex;
+    flex-direction: column;
+    line-height: 38px;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+    color:black;
+}
+
+.decodeLink{
+    text-decoration:none;
+    color:rgb(20, 63, 235);
+}
+
+.decodeLink:hover{
+     color:rgba(32, 69, 221, 0.562);
+
+     text-decoration: underline;
+}

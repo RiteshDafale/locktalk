@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+    width: 100vw;
+       background-color: aquamarine;
+    /* background-color: red; */
+}
+
+.mainCont {
+  
+    border:2px solid red;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center */
+}
+
+.forms{
+   
+    border-top: 4px dashed slategray;
+    display: flex;
+    justify-content: center;
+    column-gap: 27px;
+    padding:23px;
+}
+.toastIntro{
+        font-size: 20px;
+}
+
+#form {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:23px;
+}
+
+label {
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin-top: 23px;
+    margin-bottom: 3px;
+}
+
+input {
+    font-size: 22px;
+    height: 34px;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+}
+
+textarea {
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    padding: 7px;
+}
+
+.btn {
+   margin: 23px;
+    width: 107px;
+    font-size: 22px;
+    background-color: rgba(58, 58, 191, 0.977);
+    color: white;
+    display: flex
+;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 11px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgba(58, 58, 191, 0.46);
+    /* border: 2px solid white; */
+}
+
+.Message{
+   display: flex
+;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.buttons{
+    /* border:2px solid blueviolet;  */
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    column-gap:23px;
+    margin-bottom: 23px;;
+}
+
+.Ebtn,.Dbtn{
+    color:white;
+    background-color: rgb(58, 57, 57);
+    width:120px;
+    height:40px;
+    font-size: 23px;
+    border-radius: 13px;
+    margin-top:23px;
+    cursor:pointer
+}
+
+.Ebtn:hover,.Dbtn:hover{
+     background-color: rgb(101, 100, 100);
+}
