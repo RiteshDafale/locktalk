@@ -38,40 +38,40 @@ function Encrypt() {
     useEffect(() => {
         setdForm(false);
         seteForm(true)
-    //     // toast('🤫 Welcome to Secret Messenger! Create your secret code and share it with your friends — only they can unlock it 🔓', {
-    //     //     position: "top-right",
-    //     //     autoClose: 8000,
-    //     //     hideProgressBar: true,
-    //     //     closeOnClick: false,
-    //     //     pauseOnHover: true,
-    //     //     draggable: true,
-    //     //     progress: undefined,
-    //     //     theme: "light",
-    //     //     transition: Flip,
-    //     //     bodyClassName:"toastIntro"
-    //     // }
+        toast('🤫 Welcome to Secret Messenger! Create your secret code and share it with your friends — only they can unlock it 🔓', {
+            position: "top-right",
+            autoClose: 8000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Flip,
+            bodyClassName:"toastIntro"
+        }
 
-    // );
+    );
     }, [])
     const varifyPassword = (e) => {
         e.preventDefault();
 
-        // console.log('user input data')
-        // console.log('descrySecret = ' + descrySecret)
-        // console.log('descryPassword = ' + descryPassword)
-        // axios.post(`http://localhost:8080/varifyPassword?secret=${encodeURIComponent(descrySecret)}&password=${encodeURIComponent(descryPassword)}`)
-        //     .then((resp) => {
-        //         console.log(resp.data)
-        //         // console.log("your secret message = " + resp.data.message);
-        //         const msg = resp.data[0].message;
-        //         setDBAMessage[msg];
-        //         console.log("msg = " + msg);
-        //         setDBAMessage(msg)
-        //     })
-        //     .catch((error) => {
-        //         console.log(error);
+        console.log('user input data')
+        console.log('descrySecret = ' + descrySecret)
+        console.log('descryPassword = ' + descryPassword)
+        axios.post(`http://localhost:8080/varifyPassword?secret=${encodeURIComponent(descrySecret)}&password=${encodeURIComponent(descryPassword)}`)
+            .then((resp) => {
+                console.log(resp.data)
+                // console.log("your secret message = " + resp.data.message);
+                const msg = resp.data[0].message;
+                setDBAMessage[msg];
+                console.log("msg = " + msg);
+                setDBAMessage(msg)
+            })
+            .catch((error) => {
+                console.log(error);
 
-        //     })
+            })
 
     }
 
