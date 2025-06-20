@@ -17,7 +17,7 @@ function Success() {
 
       <div classNmae="sucessDiv">
         to decode the Message click here ...
-        <a className='decodeLink' style={{ cursor: "pointer" }} onClick={() => {
+        <a className='decodeLink' onClick={() => {
           navigate("/")
         }}> Go to Home</a>
         {/* https://github.com/RiteshDafale/PortfolioRD */}
