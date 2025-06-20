@@ -22,7 +22,7 @@ function App() {
         // transition={Bounce}
       />
       <Routes>
-        <Route path="/encryptMessage" element={<Encrypt />} />
+        <Route path="/" element={<Encrypt />} />
         <Route path="/success" element={<Success />} />
 
       </Routes>
