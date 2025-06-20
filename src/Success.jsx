@@ -15,10 +15,13 @@ function Success() {
       <h2>Secret = {secret}</h2>
       <h2>Hint Message = {hint_msg}</h2>
 
-      <a className='decodeLink' style={{ cursor: "pointer" }} onClick={() => {
-        navigate("/")
-      }}> to decode the Message click here ...</a>
-      {/* https://github.com/RiteshDafale/PortfolioRD */}
+      <div classNmae="sucessDiv">
+        to decode the Message click here ...
+        <a className='decodeLink' style={{ cursor: "pointer" }} onClick={() => {
+          navigate("/")
+        }}> Go to Home</a>
+        {/* https://github.com/RiteshDafale/PortfolioRD */}
+      </div>
     </div>
   )
 }

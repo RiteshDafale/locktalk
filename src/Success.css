@@ -16,7 +16,22 @@
 }
 
 .decodeLink:hover{
-     color:rgba(32, 69, 221, 0.562);
-
+     /* color:rgba(32, 69, 221, 0.562); */
+   cursor:pointer;
      text-decoration: underline;
+}
+
+.sucessDiv{
+    /* Background-color:gray; */
+    border:2px solid red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.decodeLink{
+    background-color:blue;
+    color:white;
+    width:120px;
+    height:23px;
+    padding:9px;
 }
