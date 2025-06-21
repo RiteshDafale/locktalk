@@ -119,3 +119,8 @@ button:hover {
 .Ebtn:hover,.Dbtn:hover{
      background-color: rgb(101, 100, 100);
 }
+
+@media only screen and (max-width: 600px) {
+   
+
+}

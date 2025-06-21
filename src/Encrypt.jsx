@@ -59,7 +59,7 @@ function Encrypt() {
         console.log('user input data')
         console.log('descrySecret = ' + descrySecret)
         console.log('descryPassword = ' + descryPassword)
-        axios.post(`http://localhost:8080/varifyPassword?secret=${encodeURIComponent(descrySecret)}&password=${encodeURIComponent(descryPassword)}`)
+        axios.post(`https:mysql-production-6c839.up.railway.app/verifyPassword?secret=${encodeURIComponent(descrySecret)}&password=${encodeURIComponent(descryPassword)}`)
             .then((resp) => {
                 console.log(resp.data)
                 // console.log("your secret message = " + resp.data.message);
@@ -78,7 +78,7 @@ function Encrypt() {
     const Sentmessage = (message, password) => {
         console.log("function clle");
 
-        axios.post(`http://localhost:8080/sentMessage?msg=${message}&password=${password}&hint=${hint}`).then((resp) => {
+        axios.post(`https://mysql-production-6c839.up.railway.app/sentMessage?msg=${message}&password=${password}&hint=${hint}`).then((resp) => {
             console.log("Message successfully encrypted");
             console.log("your secret message = " + resp.data);
             const s = resp.data;
